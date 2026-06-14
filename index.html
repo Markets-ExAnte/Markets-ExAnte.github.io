@@ -42,9 +42,9 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 7vh 5vw;
+      padding: 7vh 4vw;
       width: 100%;
-      max-width: 1500px;
+      max-width: 1850px;
     }
     .mark {
       font-size: 0.8rem;
@@ -54,23 +54,22 @@
       margin-bottom: 28px;
     }
     h1 {
-      font-size: clamp(2.4rem, 7.5vw, 5rem);
-      line-height: 1.05;
+      font-size: clamp(2.6rem, 8vw, 5.8rem);
+      line-height: 1.04;
       font-weight: 600;
       margin: 0 0 30px;
       letter-spacing: -0.02em;
-      max-width: 16ch;
+      max-width: 20ch;
     }
     h1 .accent { color: var(--accent); }
     .lede {
-      font-size: clamp(1.1rem, 1.8vw, 1.45rem);
+      font-size: clamp(1.1rem, 1.9vw, 1.55rem);
       line-height: 1.55;
       color: #cfd2d4;
-      max-width: 60ch;
+      max-width: 78ch;
       margin: 0 0 22px;
     }
     .lede.secondary {
-      color: var(--muted);
       margin-bottom: 40px;
     }
     .status {
@@ -112,14 +111,15 @@
 <body>
   <main>
     <div class="mark">Ex Ante</div>
-    <h1>Predicting the consequences of economic policy &mdash; <span class="accent">before it&rsquo;s passed.</span></h1>
+    <h1>Understanding the consequences of economic policy &mdash; <span class="accent">before it&rsquo;s passed.</span></h1>
     <p class="lede">
       Governments enact thousands of policies every year, mostly blind to what they will actually do.
-      We&rsquo;re building the first foundation model that forecasts a policy&rsquo;s effects on prices, output,
-      productivity, and the environment from its text and the market it lands in.
+      Lookback studies show existing methods of predicting policy effects perform worse than we&rsquo;d hope for.
     </p>
     <p class="lede secondary">
-      Lookback studies show existing methods of predicting policy effects perform worse than we&rsquo;d hope for.
+      We&rsquo;re building the first foundation model that forecasts a policy&rsquo;s effects on prices, output,
+      productivity, and the environment from its text and the market, cultural, political, and economic
+      context it is proposed to be implemented in.
     </p>
 
     <span class="status"><span class="dot"></span> More coming soon.</span>
