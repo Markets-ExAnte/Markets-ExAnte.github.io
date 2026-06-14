@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Keep this page out of search engines -->
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+
+  <title>Ex Ante</title>
+
+  <style>
+    :root {
+      --bg: #0d0f10;
+      --fg: #f4f3ef;
+      --muted: #8b8f93;
+      --accent: #4ea1ff;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+    .corner {
+      position: fixed;
+      top: 22px;
+      right: 32px;
+      font-size: 0.82rem;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 7vh 5vw;
+      width: 100%;
+      max-width: 1500px;
+    }
+    .mark {
+      font-size: 0.8rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+    h1 {
+      font-size: clamp(2.4rem, 7.5vw, 5rem);
+      line-height: 1.05;
+      font-weight: 600;
+      margin: 0 0 30px;
+      letter-spacing: -0.02em;
+      max-width: 16ch;
+    }
+    h1 .accent { color: var(--accent); }
+    .lede {
+      font-size: clamp(1.1rem, 1.8vw, 1.45rem);
+      line-height: 1.55;
+      color: #cfd2d4;
+      max-width: 60ch;
+      margin: 0 0 22px;
+    }
+    .lede.secondary {
+      color: var(--muted);
+      margin-bottom: 40px;
+    }
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+    .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 0 rgba(78,161,255,0.5);
+      animation: pulse 2.4s infinite;
+    }
+    @keyframes pulse {
+      0%   { box-shadow: 0 0 0 0 rgba(78,161,255,0.45); }
+      70%  { box-shadow: 0 0 0 10px rgba(78,161,255,0); }
+      100% { box-shadow: 0 0 0 0 rgba(78,161,255,0); }
+    }
+    .contact {
+      margin-top: 46px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+    .contact a {
+      color: var(--fg);
+      text-decoration: none;
+      border-bottom: 1px solid #33373a;
+    }
+    .contact a:hover { border-color: var(--accent); }
+    footer {
+      padding: 24px 5vw;
+      font-size: 0.78rem;
+      color: #5f6469;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark">Ex Ante</div>
+    <h1>Predicting the consequences of economic policy &mdash; <span class="accent">before it&rsquo;s passed.</span></h1>
+    <p class="lede">
+      Governments enact thousands of policies every year, mostly blind to what they will actually do.
+      We&rsquo;re building the first foundation model that forecasts a policy&rsquo;s effects on prices, output,
+      productivity, and the environment from its text and the market it lands in.
+    </p>
+    <p class="lede secondary">
+      Lookback studies show existing methods of predicting policy effects perform worse than we&rsquo;d hope for.
+    </p>
+
+    <span class="status"><span class="dot"></span> More coming soon.</span>
+
+    <p class="contact">
+      For collaborations, pilots, or investment: <a href="mailto:chsiegm@mit.edu">get in touch</a>.
+    </p>
+  </main>
+
+  <footer>&copy; 2026 Ex Ante</footer>
+</body>
+</html>
